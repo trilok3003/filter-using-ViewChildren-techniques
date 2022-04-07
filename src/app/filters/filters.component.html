@@ -1,0 +1,11 @@
+<nav>
+<ul>
+  <li
+    *ngFor="let filter of filters"
+    (click)="select(filter)"
+    [ngClass]="{ active: filter.active }"
+  >
+    {{ filter.title }}
+  </li>
+</ul>
+</nav>
